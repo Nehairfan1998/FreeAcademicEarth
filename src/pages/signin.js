@@ -15,7 +15,8 @@ import Pricing from 'sections/pricing';
 import PopularCourse from 'sections/popular-course';
 import CtaThree from 'sections/cta-three';
 import FavoriteCourse from 'sections/favorite-course';
-import Subscribe from 'sections/subscribe';
+import TeamSection from '../sections/team-section';
+import SignInForm from 'sections/signin-form';
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
@@ -27,17 +28,7 @@ export default function IndexPage() {
               description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
               title="New Ed Tech"
             />
-            <Banner />
-            <FavoriteCourse />
-            <CtaThree />
-            <PopularCourse />
-            <WorkFlow />
-            <Pricing />
-            <CtaTwo />
-            <FAQ />
-            <CtaOne />
-            <Subscribe/>
-            <Modal />
+            <SignInForm/>
           </Layout>
         </VideoProvider>
       </StickyProvider>

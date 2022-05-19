@@ -41,6 +41,20 @@ export default function Header({ className }) {
             sx={styles.headerBtn}
             variant="buttons.primary"
           />
+             <Link
+            path="/signup"
+            ml={2}
+            label="Sign up"
+            sx={styles.headerBtn}
+            variant="buttons.primary"
+          />
+             <Link
+            path="/signin"
+            ml={2}
+            label="Sign in"
+            sx={styles.headerBtn}
+            variant="buttons.primary"
+          />
 
           <MobileDrawer />
         </Container>

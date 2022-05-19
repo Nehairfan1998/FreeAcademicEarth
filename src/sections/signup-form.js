@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button, Input, Box, Container, Heading, Text } from "theme-ui";
 
-const Subscribe = () => {
+const SignUpForm = () => {
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [phone, setPhone] = useState("");
@@ -58,10 +58,9 @@ const Subscribe = () => {
   return (
     <Box id="contact" as="section" sx={styles.subscribe}>
       <Container sx={styles.container}>
-        <Heading as="h3">Talk to us</Heading>
+        <Heading as="h3">Sign up</Heading>
         <Text as="p">
-          Wondering if we can help, but not ready for a chat? Just drop a line
-          in the form below we'll get back to you.
+          Fill in the details to become a member of our community.
         </Text>
         <Box as="form" sx={styles.form} onSubmit={(e) => formSubmitHandler(e)}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
@@ -83,29 +82,37 @@ const Subscribe = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <Input
-            placeholder="Phone"
-            type="text"
+            placeholder="Password"
+            type="password"
             sx={styles.input}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
-          <Input
+            <Input
+            placeholder="Confirm Password"
+            type="password"
+            sx={styles.input}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          {/* <Input
             placeholder="Subject"
             type="text"
             sx={styles.input}
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
-          />
-          <Button type="submit" sx={styles.button}>
-            Send Message
-          </Button>
+          /> */}
+        
         </Box>
+        <Button type="submit" sx={styles.button}>
+           Sign Up
+          </Button>
       </Container>
     </Box>
   );
 };
 
-export default Subscribe;
+export default SignUpForm;
 
 const styles = {
   container: {

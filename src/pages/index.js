@@ -22,6 +22,7 @@ export default function IndexPage() {
       <StickyProvider>
         <VideoProvider>
           {/* layout contains nav and footer */}
+          {/* registration page and login page */}
           <Layout>
             <SEO
               description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
